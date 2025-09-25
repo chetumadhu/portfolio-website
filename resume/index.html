@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Chetan Ahire - Software Developer & Python Specialist">
+    <meta name="keywords"
+        content="portfolio, web developer, software engineer, Chetan Ahire, Python, JavaScript, Full Stack Developer">
+    <meta name="author" content="Chetan Ahire">
+    <!-- Favicon -->
+    <link rel="icon" type="" href="c.jpeg">
+
+
+    <title>Chetan Ahire</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+
+    <!-- Preload res -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        as="font" crossorigin>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <span class="toggle-icon">
+            <i class="fas fa-moon light-icon"></i>
+            <i class="fas fa-sun dark-icon"></i>
+        </span>
+    </button>
+
+    <!-- Loading Screen -->
+    <div class="loader" role="status" aria-live="polite">
+        <div class="loader-content">
+            <svg class="loader-spinner" viewBox="0 0 50 50">
+                <circle class="spinner-track" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+                <circle class="spinner-path" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+            </svg>
+            <h2 class="loader-name">
+                <span class="name-gradient">Chetan Ahire</span>
+            </h2>
+            <p class="loader-status">
+                <span class="status-text">Loading Portfolio</span>
+                <span class="animated-dots"></span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" role="banner">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#hero" aria-label="Home">
+                    <img src="c.jpeg" alt="Logo" width="50" height="50" loading="lazy">
+
+                </a>
+            </div>
+
+
+            <nav class="navbar-nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+           
+
+            <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Chetan <span class="highlight">Ahire</span></h1>
+                    <div class="hero-subtitle">
+                        <span class="typewriter"
+                            data-words='["Full Stack Developer", "Python Specialist", "Web Developer", "Problem Solver"]'></span>
+                    </div>
+                    <p class="hero-tagline">कोड ही केवळ भाषा नाही, ती एक कला आहे — जिथे गुंतागुंतीच्या समस्यांनाही सुंदर
+                        समाधान मिळतं</p>
+                    <div class="hero-cta">
+                        <a href="assets/resume.pdf" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-eye"></i> View Resume
+                        </a>
+
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hero-particles" id="particles-js"></div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="about-heading">About <span class="highlight">Me</span></h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-photo" data-aos="fade-right">
+                        <img src="cm1.jpg" alt="Chetan Ahire" loading="lazy">
+                    </div>
+                    <div class="about-text" data-aos="fade-left">
+                        <h3>Who am I?</h3>
+                        <p>
+                            I'm <strong>Chetan Sandip Ahire</strong>, a passionate Full Stack Developer with expertise
+                            in Python and JavaScript technologies.
+                            Based in Maharashtra, India, I specialize in building robust web applications and solving
+                            complex
+                            problems through clean, efficient code.
+                        </p>
+
+                        <div class="about-values">
+                            <div class="value-item" data-aos="zoom-in">
+                                <div class="value-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h4>Clean Code</h4>
+                                <p>I write maintainable, scalable code following best practices</p>
+                            </div>
+
+                            <div class="value-item" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="value-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h4>Problem Solving</h4>
+                                <p>Strong analytical skills to break down complex problems</p>
+                            </div>
+
+                            <div class="value-item" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="value-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>Fast Learner</h4>
+                                <p>Quick to adapt to new technologies and frameworks</p>
+                            </div>
+                        </div>
+
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-handshake"></i> Let's Collaborate
+                            </a>
+                            <a href="#projects" class="btn btn-secondary">
+                                <i class="fas fa-eye"></i> View My Work
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="skills-heading">Technical <span class="highlight">Skills</span></h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skills-category" data-aos="fade-up">
+                        <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                        <div class="skills-container">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="html.jpeg" alt="HTML5" loading="lazy">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="95"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="css.jpeg" alt="CSS3" loading="lazy">
+                                    <span>CSS</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="js.jpg" alt="JavaScript" loading="lazy">
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="reacet.jpeg" alt="React" loading="lazy">
+                                    <span>React</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3><i class="fas fa-server"></i> Backend Development</h3>
+                        <div class="skills-container">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="py.jpeg" alt="Python" loading="lazy">
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="85"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="node.jpeg" alt="Node.js" loading="lazy">
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="75"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="flask.png" alt="Express" loading="lazy">
+                                    <span>Flask</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="70"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="dj.jpeg" alt="Django" loading="lazy">
+                                    <span>Django</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3><i class="fas fa-database"></i> Database & DevOps</h3>
+                        <div class="skills-container">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="md.jpeg" alt="MongoDB" loading="lazy">
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="sql.jpeg" alt="MySQL" loading="lazy">
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="85"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="git.jpeg" alt="Git" loading="lazy">
+                                    <span>Git</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="cc.jpeg" alt="Docker" loading="lazy">
+                                    <span>C</span>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="level-bar" data-level="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-legend">
+                    <div class="legend-item">
+                        <span class="legend-level beginner"></span>
+                        <span>Beginner (0-50%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-level intermediate"></span>
+                        <span>Intermediate (50-75%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-level advanced"></span>
+                        <span>Advanced (75-90%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-level expert"></span>
+                        <span>Expert (90-100%)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="experience-heading">Professional <span class="highlight">Experience</span></h2>
+                    <p class="section-subtitle">My career journey so far</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Freelance Full Stack Developer</h3>
+                            <h4>Independent / Self-Made</h4>
+                            <ul>
+                                <li>Transformed client ideas into fully functional, user-friendly websites and web apps
+                                </li>
+                                <li>Handled end-to-end development using HTML, CSS, JavaScript, and backend tools</li>
+                                <li>Delivered 10+ projects across e-commerce, portfolios, and SaaS-like platforms</li>
+                                <li>Built strong client trust through clear communication and timely delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Web Development Intern</h3>
+                            <h4>Tech Solutions Inc. (Remote)</h4>
+                            <ul>
+                                <li>Built interactive components using JavaScript, improved UI/UX of internal tools</li>
+                                <li>Worked on real-world web projects with guidance from senior developers</li>
+                                <li>Collaborated using Git, debugged issues, and followed agile methodology</li>
+                                <li>Gained deep exposure to client-side performance optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>Python Developer Trainee</h3>
+                            <h4>Coding Academy</h4>
+                            <ul>
+                                <li>Started my journey into the world of development with Python</li>
+                                <li>Built basic automation scripts, mini apps, and understood software logic</li>
+                                <li>Practiced DSA, logic-building, and participated in college hackathons</li>
+                                <li>Laid the foundation for future roles in full-stack and backend development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="projects-heading">Featured <span class="highlight">Projects</span></h2>
+                    <p class="section-subtitle">A selection of my best work</p>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="javascript">Frontend</button>
+                    <button class="filter-btn" data-filter="python">Backend</button>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card" data-category="web javascript" data-aos="zoom-in">
+                        <div class="project-image">
+                            <img src="s1.png" alt="Netflix Clone Project" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://pillula.netlify.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CMFLEX - Netflix Clone</h3>
+                            <p class="project-description">
+                                CMFLEX is a fully responsive, real-world Netflix clone developed to simulate a premium
+                                OTT streaming experience.
+                                Users can browse featured movies, explore categories, and use a live search bar for
+                                instant filtering.
+                                The interface is inspired by Netflix's sleek design and optimized for all screen sizes.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <ul class="project-highlights">
+                                <li>Created a homepage UI similar to Netflix, with featured banners and content rows
+                                </li>
+                                <li>Integrated search filtering using vanilla JavaScript for instant results</li>
+                                <li>Designed fully responsive layout with clean, modern UI. </li>
+
+                            </ul>
+
+                            <div class="project-links">
+                                <a href="https://pillula.netlify.app" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-eye"></i> Explore
+                                </a>
+                                <a href="https://github.com/chetanahire/netflix-clone" target="_blank"
+                                    class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>  Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web python" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="s3.png" alt="E-commerce Project" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://cmmart.netlify.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CMMART - E-commerce Platform</h3>
+                            <p class="project-description">
+                                CMMART is a fully functional and scalable e-commerce platform built using Django.
+                                It features a dynamic product catalog, user authentication, shopping cart functionality,
+                                and secure payment integration using Stripe API. The platform is designed for both
+                                desktop and mobile users.
+                            </p>
+                            <div class="project-tech">
+                                <span>Html</span>
+                                <span>Django</span>
+                                <span>Css3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <ul class="project-highlights">
+                                <li>Developed a complete product catalog system with category-wise filtering and search
+                                </li>
+                                <li>Implemented user registration, login/logout, and session-based cart management</li>
+                                <li>Used PostgreSQL for efficient data handling and scalability. </li>
+
+                            </ul>
+
+                            <div class="project-links">
+                                <a href="https://cmmart.netlify.app" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-eye"></i> Explore
+                                </a>
+                                <a href="https://github.com/chetanahire/ecommerce-platform" target="_blank"
+                                    class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>  Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-category="web python" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="s2.png" alt="E-commerce Project" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://cmmart.netlify.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CheriVibe - 0.1</h3>
+                            <p class="project-description">
+                                CheriVibe is a stylish frontend music streaming platform inspired by modern music apps.
+                                It allows users to explore curated songs, play music seamlessly, and browse through
+                                categories with an engaging UI.
+                                Built using HTML, CSS, and JavaScript, this version focuses on UI/UX and interactive
+                                playback.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Stripe API (planned for future versions)</span>
+                            </div>
+                            <ul class="project-highlights">
+                                <li>Designed a modern, responsive music UI with category-wise song sections</li>
+                                <li>Implemented custom audio player using JavaScript for smooth playback</li>
+                                <li>Responsive layout optimized for mobile and desktop devices</li>
+                                <li>Future-ready design with placeholders for login, premium, and checkout. </li>
+                            </ul>
+
+                            <div class="project-links">
+                                <a href="https://cmmart.netlify.app" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-eye"></i> Explore
+                                </a>
+                                <a href="https://github.com/chetanahire/ecommerce-platform" target="_blank"
+                                    class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>  Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-category="web python" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="chess.png" alt="E-commerce Project" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://cmmart.netlify.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Chess King </h3>
+                            <p class="project-description">
+                                Chess King is an interactive, browser-based chess game built with HTML, CSS, and
+                                JavaScript.
+                                It simulates real chess gameplay with smooth animations, legal move validation, and
+                                user-friendly UI.
+                                Designed with a modern 3D-inspired board interface, it offers both "Play with AI" and
+                                "Play with Human" modes.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                            </div>
+                            <ul class="project-highlights">
+                                <li>Developed a fully functional chess board with all standard rules (castling, check,
+                                    checkmate, etc.)</li>
+                                <li>Implemented move validation, turn switching, and highlight for possible moves</li>
+                                <li>Designed futuristic 3D-style UI using advanced CSS and custom graphics</li>
+                                <li>Includes both "Play with Human" (local 2-player) and AI-based opponent mode (basic
+                                    logic)</li>
+                                <li>Optimized for desktop gameplay with responsive layout and smooth transitions. </li>
+                            </ul>
+
+                            <div class="project-links">
+                                <a href="https://cmchess.netlify.app/" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-eye"></i> Explore
+                                </a>
+                                <a href="https://github.com/chetanahire/ecommerce-platform" target="_blank"
+                                    class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>  Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="javascript python" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="gan.png" alt="Music App Project" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://cherivibes.netlify.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CheriVibes - Music Streaming 2.0</h3>
+                            <p class="project-description">
+                                CheriVibes 2.0 is an advanced full-stack music streaming application designed to provide
+                                a seamless audio experience.
+                                Users can search tracks using the Spotify API, create and manage custom playlists, and
+                                enjoy real-time audio visualizations.
+                                Built with React and Node.js, it offers fast performance, smooth UI, and persistent user
+                                preferences powered by MongoDB.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Spotify API</span>
+                                <span>Html</span>
+                                <span>Css3</span>
+                                <span>js2</span>
+                            </div>
+
+                            <ul class="project-highlights">
+                                <li>Integrated Spotify API for real-time music streaming and metadata fetching</li>
+                                <li>Enabled playlist creation, editing, and storage linked to user accounts</li>
+                                <li>Implemented dynamic audio visualizer for enhanced music experience</li>
+                                <li>Used MongoDB to store user preferences and track data persistently</li>
+                                <li>Responsive UI with smooth animations, built using React hooks and context. </li>
+                            </ul>
+
+                            <div class="project-links">
+                                <a href="https://cmgana.netlify.app/ " target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-eye"></i> Explore
+                                </a>
+                                <a href="https://github.com/chetanahire/music-app" target="_blank"
+                                    class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>  Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certificates" class="section certificates" aria-labelledby="certificates-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="certificates-heading">Professional <span class="highlight">Certifications</span></h2>
+                    <p class="section-subtitle">My learning achievements</p>
+                </div>
+
+                <div class="certificates-slider">
+                    <div class="certificate-card" data-aos="flip-left">
+                        <div class="certificate-image">
+                            <img src="full copy.jpg" alt="Full Stack Development Certificate" loading="lazy">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>Full Stack Web Development</h3>
+                            <div class="certificate-meta">
+                                <span><i class="fas fa-award"></i> SkillHub</span>
+                                <span><i class="fas fa-calendar-alt"></i> Aug 2023</span>
+                            </div>
+                            <p>
+                                Learned frontend & backend development, APIs, databases, and deployment basics.
+                            </p>
+                            <a href="assets/docs/Full.jpg" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="certificate-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="certificate-image">
+                            <img src="chat.jpg" alt="Python Certificate" loading="lazy">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>ChatGPT for Python Programming</h3>
+                            <div class="certificate-meta">
+                                <span><i class="fas fa-award"></i> Udemy</span>
+                                <span><i class="fas fa-calendar-alt"></i> Jun 2023</span>
+                            </div>
+                            <p>
+                                Covered Python, data structures, algorithms, and web scraping with ChatGPT-powered
+                                workflows.
+                            </p>
+                            <a href="assets/docs/chat copy.jpg" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="certificate-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="certificate-image">
+                            <img src="js.jpg" alt="JavaScript Certificate" loading="lazy">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>JavaScript for Beginners</h3>
+                            <div class="certificate-meta">
+                                <span><i class="fas fa-award"></i> Udemy</span>
+                                <span><i class="fas fa-calendar-alt"></i> May 2023</span>
+                            </div>
+                            <p>
+                                Learned the basics of JavaScript including variables, functions, events, loops,
+                                and simple DOM manipulation to build interactive web pages.
+                            </p>
+                            <a href="assets/docs/js copy.jpg" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="certificate-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="certificate-image">
+                            <img src="s4.jpg" alt="JavaScript Certificate" loading="lazy">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>AI Smart Glasses – Research Project</h3>
+                            <div class="certificate-meta">
+                                <span><i class="fas fa-award"></i> Udemy</span>
+                                <span><i class="fas fa-calendar-alt"></i> May 2023</span>
+                            </div>
+                            <p>
+                                My first research journey, exploring the future of wearable tech through AI-powered
+                                smart glasses.
+                                Collaborated with a friend to bring ideas to life — a project that truly inspired me.
+                            </p>
+                            <a href="assets/docs/s4 copy.jpg" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Research
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="certificate-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="certificate-image">
+                            <img src="m1.png" alt="JavaScript Certificate" loading="lazy">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>Frontend Development Internship</h3>
+                            <div class="certificate-meta">
+                                <span><i class="fas fa-award"></i> Udemy</span>
+                                <span><i class="fas fa-calendar-alt"></i> May 2023</span>
+                            </div>
+                            <p>
+                                Completed a 30-day internship focused on frontend development. Gained hands-on
+                                experience with HTML, CSS, and JavaScript while building real-world UI components.
+                                Successfully earned ₹2000 as a stipend for my contribution.
+                            </p>
+                            <a href="assets/docs/m1 copy.png" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="certificate-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="certificate-image">
+                            <img src="gen-ai.jpg" alt="AI Certificate" loading="lazy">
+                        </div>
+                       <div class="certificate-content">
+    <h3>Generative AI Foundations</h3>
+    <div class="certificate-meta">
+        <span><i class="fas fa-award"></i> Google Cloud</span>
+        <span><i class="fas fa-calendar-alt"></i> Nov 2023</span>
+    </div>
+    <p>
+        Completed a foundational course on Generative AI, covering model architecture, training techniques, and real-world applications in modern software systems. Gained hands-on insights into how generative models like ChatGPT and Diffusion Models work.
+    </p>
+    <a href="assets/docs/gen-ai copy.jpg" class="btn btn-secondary" target="_blank">
+        <i class="fas fa-external-link-alt"></i> View Certificate
+    </a>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="contact-heading">Get In <span class="highlight">Touch</span></h2>
+                    <p class="section-subtitle">Let's work together</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-photo">
+                            <img src="cm2.jpg" alt="Chetan Ahire" loading="lazy">
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:chetumadhu1432@gmail.com">chetumadhu1432@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+918830620866">+91 8830620866</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Lohoner, Maharashtra, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/in/chetan-ahire-9580222b8/" target="_blank"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.instagram.com/csahire1262004/" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://leetcode.com/chetanahire/" target="_blank" aria-label="LeetCode">
+                                <i class="fas fa-code"></i>
+                                <span>LeetCode</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" method="POST" netlify data-aos="fade-left">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can I help you?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" aria-label="Home">
+                        <img src="c.jpeg" alt="Chetan Ahire Logo" width="50" height="50" loading="lazy">
+                        <div>
+                            <span>Chetan Ahire</span>
+                            <p>Full Stack Developer</p>
+                        </div>
+                    </a>
+                    <p class="footer-quote">
+                        "Turning ideas into reality through code and creativity."
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Web Development</li>
+                        <li><i class="fas fa-check"></i> Full Stack Solutions</li>
+                        <li><i class="fas fa-check"></i> Python Programming</li>
+                        <li><i class="fas fa-check"></i> API Development</li>
+                        <li><i class="fas fa-check"></i> Technical Consulting</li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to my newsletter for the latest updates and insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Chetan Ahire. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>
